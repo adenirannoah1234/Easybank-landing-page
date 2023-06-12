@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --DarkBlue: hsl(233, 26%, 24%)
+    --LimeGreen: hsl(136, 65%, 51%)
+    --BrightCyan: hsl(192, 70%, 51%)
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    height: 60px;
+    align-items: center;
+    padding: 20px 50px;
+}
+ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+}
+.requestbtn{
+    background-color: limegreen;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 50px;
+}
