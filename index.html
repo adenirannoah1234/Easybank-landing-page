@@ -4,61 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easybank-landing page</title>
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <nav>
-        <a class="logo" href="/">
-            <img src="images/logo.svg" alt="logo">
-        </a>
-        <ul>
-            <li><a href="#"></a>Home</li>
-            <li><a href="#"></a>About</li>
-            <li><a href="#"></a>Blogs</li>
-            <li><a href="#"></a>Contacts</li>
-        </ul>
-        <button class="requestbtn"> Request invite</button>
-    </nav>
-    <div class="mainbox">
-     <div>
-          <h1> Next generation digital banking</h1>
-          <p> Take your financial life online.Your easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
-          <button class="requestbtntwo"> Request invite</button>
-     </div>
-     <img class="secondimg" src="images/image-mockups.png" alt="">
-    </div>
-    <div class="mainboxtwo">
-        <div class="sectiontwo">
-                    <h1> why choose easybank?</h1>
-                    <p>We leaverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.</p>
-       </div>
-          <div class="sectionthree"> 
-                   <div class="sectionfour">
-                      <img src="images/icon-online.svg" alt="">
-                      <h3>Online Banking </h3>
-                      <p>Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</p>
-                   </div>
-                   <div class="sectionfive">
-                      <img src="images/icon-budgeting.svg" alt="">
-                      <h3>Simple Budeting </h3>
-                      <p>Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</p>
-                   </div>
-                
-                  <div class="sectionsix">
-                      <img src="images/icon-onboarding.svg" alt="">
-                       <h3>Fast Onboarding</h3>
-                       <p>Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</p>
-                  </div>  
-                 <div class="sectionseven">
-                      <img src="images/icon-api.svg" alt="">
-                       <h3>Open API</h3>
-                       <p>Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</p>
-                 </div>  
-         </div>                            
-    </div>
+    <section id="main-section">
+       <nav>
+          <a class="logo" href="/">
+              <img  class="logo-one"  src="images/logo.svg" alt="logo">
+          </a>
+          <div class="toggler">
+            <i class="ri-menu-line"></i>
+            <i class="ri-close-circle-line"></i>
+          </div>
+           <ul>
+               <li><a href="/">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#articles">Blogs</a></li>
+               <li><a href="#footers">Contacts</a></li>
+           </ul>
+            <button class="requestbtn"> Request invite</button>
+       </nav>
+      <div class="mainbox">
+          <div class="child-one">
+              <h1> Next generation digital banking</h1>
+               <p> Take your financial life online.Your easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
+                <button class="requestbtntwo"> Request invite</button>
+          </div>
+          <img class="secondimg" src="images/image-mockups.png" alt="">
+      </div>
+    </section>
+    <section id="about">
+        <div class="mainboxtwo">
+            <div class="sectiontwo">
+                        <h1> Why choose easybank?</h1>
+                        <p>We leaverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.</p>
+           </div>
+              <div class="sectionthree"> 
+                       <div class="sectionfour">
+                          <img src="images/icon-online.svg" alt="">
+                          <h3>Online Banking </h3>
+                          <p>Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</p>
+                       </div>
+                       <div class="sectionfive">
+                          <img src="images/icon-budgeting.svg" alt="">
+                          <h3>Simple Budeting </h3>
+                          <p>Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</p>
+                       </div>
+                    
+                      <div class="sectionsix">
+                          <img src="images/icon-onboarding.svg" alt="">
+                           <h3>Fast Onboarding</h3>
+                           <p>Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</p>
+                      </div>  
+                     <div class="sectionseven">
+                          <img src="images/icon-api.svg" alt="">
+                           <h3>Open API</h3>
+                           <p>Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</p>
+                     </div>  
+             </div>                            
+        </div>
+    </section>
+  
+    <section id="articles">
     <p class="parg">Latest Articles </p>
  <div class="article">
          <div class="boxone">
@@ -86,7 +97,36 @@
             <h3>Our invite-only Beta accounts are now live!</h3>
             <p>After a lot of hard work by the whole team, we're excited to launch our closed beta. It's easy to request an invite through the site ...</p>
         </div>
+        
  </div>
-
+    </section>
+    <section id="footers">
+<div id="footerli">
+    <div class="footerul">
+        <img class="img-one" src="images/logo.svg" alt="">
+       <ul class="footerli">
+            <li><a href="#"><img  class="images" src="images/icon-facebook.svg" alt=""></a></li>
+            <li> <a href="#"> <img class="images"   src="images/icon-youtube.svg" alt=""></a></li>
+            <li><a href="#"><img class="images"    src="images/icon-twitter.svg" alt=""></a></li>
+            <li><a href="#"><i class="ri-whatsapp-line"></i></a></li>
+             <li><a href="#"><img   class="images"       src="images/icon-instagram.svg" alt=""></a></li>
+      </ul>
+    </div>
+      <div class="list-one">
+            <a href="#">About us</a>
+            <a href="#">Contact</a>
+            <a href="#">Blog</a>
+     </div>   
+     <div class="list-two">
+            <a href="#">Careers</a>
+            <a href="#">Support</a>
+            <a href="#">Privacy Policy</a>
+      </div>
+      <div>
+        <button class="last-button"> Request invite</button>
+        <p class="copy">© Easybank. All Rights Reserved</p>
+      </div>
+</div>
+    </section>
 </body>
 </html>
