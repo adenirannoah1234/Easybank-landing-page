@@ -170,7 +170,10 @@ a{
     padding: 30px 50px;
 }
 .footerli{
+    display: flex;
     gap: 1rem;
+    text-decoration: none;
+    list-style: none;
 }
 .img-one{
     margin-bottom: 20px;
@@ -195,14 +198,20 @@ a{
 }
 .ri-whatsapp-line{
     color: white;
+    width: 50%;
     font-size: 20px;
     margin-bottom: 25px;
 }
+/* .requestbtn{
+    display: none;
+} */
 @media screen and (max-width: 992px) {
 nav{ 
     padding: 16px 30px
 }
-
+/* .requestbtn{
+    display: none;
+} */
 .logo-one{
     width:85%;
 }
@@ -230,12 +239,37 @@ nav{
 .mainbox h1{
     font-size: 2rem;
 }
+ .requestbtn{
+    display: none;
+}
+.ri-close-circle-line{
+    display: none;
+}
+.toggler{
+    display: block;
+}
+nav ul{
+    flex-direction: column;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    padding: 30px;
+    text-align: center;
+    transform: translate(-50%,-50%); 
+    box-shadow: 5px 5px 10px rgb(207, 207, 207);
+}
+#footerli{
+    gap: 2rem;
+}
+
 }
 @media screen and (max-width: 576px) {
     .requestbtn{
         display: none;
     }
-    .toggler{
+    /* .toggler{
         display: block;
     }
     .ri-close-circle-line{
@@ -252,8 +286,7 @@ nav{
         text-align: center;
         transform: translate(-50%,-50%); 
         box-shadow: 5px 5px 10px rgb(207, 207, 207);
-
-    }
+    } */
     #footerli{
         display: flex;
         flex-direction: column;
@@ -272,9 +305,18 @@ nav{
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
-    .list-two,.list-two,.last-button{
-        margin-top: 20px;
+    .mainbox{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
     }
+    .secondimg{
+        width: 100%;
+        padding: 60px;
+    }
+    /* .list-two,.list-two,.last-button{
+        margin-top: 20px;
+    } */
     
     #footerli{
       text-align: center;
