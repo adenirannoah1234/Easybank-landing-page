@@ -286,7 +286,7 @@ nav{
 .sectiontwo{
     text-align: center;
    position: relative;
-   left: 70px;
+   left: 60px;
 }
 .sectiontwo p{
  width: 100%;
@@ -331,8 +331,8 @@ nav ul{
     .mainbox div p{
         position: relative;
         left: 10px;
-        line-height: 1.8;
-        font-size: 13px;
+        line-height: 1.2;
+        font-size: 12px;
     } 
     .child-one{
         width: 80%;
@@ -365,17 +365,9 @@ nav ul{
         width: 100%;
         padding: 75px;
     }
-    /* .list-two,.list-two,.last-button{
-        margin-top: 20px;
-    } */
-    
     #footerli{
       text-align: center;
     }
-    /* .sectiontwo{
-        padding: 30px;
-    } */
-    
     .maintext1{
         position: relative;
     }
@@ -401,11 +393,7 @@ nav ul{
         grid-template-columns: 1fr;
         text-align: center;
     }
-    .child-one p{
-        font-size: 82px;
-        line-height: 1.2;
-    }
-    
+       
 
 }
   
