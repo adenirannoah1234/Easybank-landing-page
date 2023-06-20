@@ -286,7 +286,7 @@ nav{
 .sectiontwo{
     text-align: center;
    position: relative;
-   left: 60px;
+   left: 50px;
 }
 .sectiontwo p{
  width: 100%;
@@ -326,7 +326,7 @@ nav ul{
     }
     .mainbox div{
         width: 100%;
-        padding: 50px;
+        /* padding: 50px; */
     }
     .mainbox div p{
         position: relative;
