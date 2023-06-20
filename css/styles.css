@@ -47,7 +47,7 @@ a{
     justify-content: center;
     align-items: center;
     justify-content: space-between;
-    padding: 50px 70px;
+    padding: 60px 80px;
 }
 .mainbox h1{
     margin-bottom: 20px;
@@ -55,16 +55,18 @@ a{
     font-size: 3.2rem;
 }
 .mainbox p{
-    margin: 2rem 0;
+    font-weight: 100;
+    font-size: 16px;
+    margin-bottom: 10px;
     text-align: justify;
     line-height: 1.8;
 }
-.mainbox div{
+ .mainbox div{
     width: 40%;
 }
 .secondimg{
     width: 40%;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 .requestbtntwo{
     background: linear-gradient(to right, rgb(43, 199, 147), rgb(0, 195, 255));
@@ -87,10 +89,11 @@ a{
 .sectiontwo h1{
     font-weight: 100;
     font-size: 2.5rem;
-    line-height: 1.7;
+    /* line-height: 1.7; */
 }
 .sectiontwo p{
     line-height: 1.5;
+    padding-top: 30px;
 }
 .sectionthree{
     display: grid;
@@ -104,9 +107,10 @@ a{
    font-size: 1rem;
 }
 .sectionthree p{
+    margin-bottom: 20px;
     font-weight: 100;
     font-size: 15px;
-    line-height: 1.8;
+    line-height: 30px;
 }
 #articles{
     padding: 100px;
@@ -167,7 +171,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 50px;
+    padding: 30px 30px;
 }
 .footerli{
     display: flex;
@@ -216,7 +220,7 @@ nav{
     width:85%;
 }
 .mainbox ,.mainboxtwo,#articles{
-    padding: 50px;
+    padding: 30px;
 }
 /* a{
     font-size: 2px;
@@ -233,6 +237,16 @@ nav{
 .mainbox,.mainboxtwo,#articles{
     padding: 30px;
 }
+.sectionthree{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 30px;
+}
+.article{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 10px;
+}
 .sectiontwo{
     width: 65%;
 }
@@ -248,20 +262,42 @@ nav{
 .toggler{
     display: block;
 }
+.sectiontwo{
+    text-align: center;
+    margin-left: 100px;
+}
+.sectiontwo p{
+ width: 100%;
+ text-align: center;
+ font-weight: 100;
+ font-size: 13px;
+ line-height: 1.5;
+}
+.sectiontwo h1{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
 nav ul{
     flex-direction: column;
     background-color: #fff;
     position: fixed;
-    top: 50%;
+    top: -50%;
     left: 50%;
     width: 40%;
     padding: 30px;
     text-align: center;
     transform: translate(-50%,-50%); 
     box-shadow: 5px 5px 10px rgb(207, 207, 207);
-}
+    transition: .5s;
+} 
 #footerli{
     gap: 2rem;
+}
+.child-one h1{
+    font-size: 1.5rem;
+}
+.child-one p{
+    font-size: 13px;
 }
 
 }
@@ -269,24 +305,21 @@ nav ul{
     .requestbtn{
         display: none;
     }
-    /* .toggler{
-        display: block;
+    .mainbox div{
+        width: 100%;
+        padding: 50px;
     }
-    .ri-close-circle-line{
-        display: none;
-    }
-    nav ul{
-        flex-direction: column;
-        background-color: #fff;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        width: 40%;
-        padding: 30px;
+    .mainbox div p{
+        width: 80%;
+        line-height: 1.8;
+        font-size: 15px;
+        padding-bottom: 30px;
+    } 
+    .child-one{
+        width: 80%;
         text-align: center;
-        transform: translate(-50%,-50%); 
-        box-shadow: 5px 5px 10px rgb(207, 207, 207);
-    } */
+        padding: 30px;
+    }
     #footerli{
         display: flex;
         flex-direction: column;
@@ -294,9 +327,9 @@ nav ul{
     .mainbox h1{
         font-size: 1.5rem;
     }
-    .child-one{
-        width: 100%;
-    }
+    /* .child-one{
+        width: 80%;
+    } */
     .sectionthree{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -308,11 +341,13 @@ nav ul{
     .mainbox{
         display: flex;
         flex-direction: column-reverse;
+        justify-content: center;
         text-align: center;
+        padding: 30px;
     }
     .secondimg{
         width: 100%;
-        padding: 60px;
+        padding: 75px;
     }
     /* .list-two,.list-two,.last-button{
         margin-top: 20px;
@@ -321,14 +356,17 @@ nav ul{
     #footerli{
       text-align: center;
     }
+    .sectiontwo{
+        padding: 30px;
+    }
 }
 @media screen and (max-width: 480px) { 
     .mainbox h1{
         font-size: 1.2rem;
     }
-    .child-one{
+    /* .child-one{
         width: 100%;
-    }
+    } */
     .requestbtn{
         display: none;
     }
@@ -339,8 +377,39 @@ nav ul{
     .article{
         display: grid;
         grid-template-columns: 1fr;
+        text-align: center;
+    }
+    /* .mainboxtwo{
+        text-align: center;
+        padding: 20px 30px;
+    } */
+    .sectionfour{
+        margin-left: 50px;
+        text-align: center;
+        padding: 50px; 
+        width: 100%;
     }
 
 }
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+  
     
 
