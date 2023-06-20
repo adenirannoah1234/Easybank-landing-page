@@ -332,7 +332,8 @@ nav ul{
         position: relative;
         left: 10px;
         line-height: 1.2;
-        font-size: 12px;
+        font-size: 15px;
+        padding: 20px;
     } 
     .child-one{
         width: 80%;
