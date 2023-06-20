@@ -330,10 +330,9 @@ nav ul{
     }
     .mainbox div p{
         position: relative;
-        left: 10px;
         line-height: 1.2;
-        font-size: 15px;
-        padding: 20px;
+        font-size: 12px;
+        
     } 
     .child-one{
         width: 80%;
